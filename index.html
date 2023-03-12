@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat&family=Open+Sans&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="style.css">
   <title>Black Coffee</title>
 </head>
 <body>
@@ -14,31 +12,38 @@
   <main>
 
     <section class="banner">
-      <header>    
-        <button><img src="./assets/banner/Burger.png" alt=""></button>
-        <strong>BlackCoffee</strong>
-        <button><img src="./assets/banner/Vector0.svg" alt=""></button>    
-      </header>
+            
+      <div class="banner-items">
 
-      <img src="./assets/banner/image 1.png" alt="Balcão de uma cafeteria com prateleiras ao fundo">
+        <div class="banner-header">    
+          <button><img src="./assets/banner/Burger.png" alt=""></button>
+          <div>
+            <strong class="banner-bold">Black</strong><strong class="banner-bold-italic">Coffee</strong>
+          </div>
+          <button class="banner-sacola"><img src="./assets/banner/Vector.svg" alt=""></button>    
+        </div>
+  
+        <div class="banner-elements">
+          <div class="banner-sliders">
+            <img src="./assets/banner/Group 13.png" alt="">
+          </div>
+          <div class="banner-title">
+            <h1>Preparamos o <br>melhor café fresco <br>da torra cada dia</h1>
+                      
+          </div>
+          <div class="banner-entregamos">
+            <p>Entregamos em todo Brasil</p>
+          </div> 
+            
+          <div class="banner-arrows">
+            <button><img src="./assets/banner/Group 15.png" alt=""></button>
+            <button><img src="./assets/banner/Group 14.png" alt=""></button>            
+          </div>
+        </div>
 
-      <div class="banner-elements">
-        <div class="banner-sliders">
-          <img src="./assets/banner/Group 13.png" alt="">
-        </div>
-        <div class="banner-title">
-          <h1>Preparamos o</h1>
-          <h1>melhor café fresco</h1>
-          <h1>da torra cada dia</h1>
-          <p>Entregamos em todo Brasil</p>
-        </div>
-          
-        <div class="banner-arrows">
-          <button><img src="./assets/banner/Group 15.png" alt=""></button>
-          <button><img src="./assets/banner/Group 14.png" alt=""></button>
-          
-        </div>
       </div>
+
+      <img class="banner-imagem" src="./assets/banner/image 1.png" alt="Balcão de uma cafeteria com prateleiras ao fundo">          
     </section>
 
     <section class="highlights">
@@ -129,15 +134,21 @@
         </div>
       </div>
       <div class="catalogo-acessorios">
-        <div>
+        <div class="catalogo">
           <img src="./assets/mid-section/Rectangle 20.png" alt="Grãos de café">
-          <h2>Catálogo de cafés</h2>
-          <p>Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p>
+          <div class="catalogo-texto">
+            <h2>Catálogo de cafés</h2>
+            <p>Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p>
+          </div>
+          
         </div>
-        <div>
+        <div class="acessorios">
           <img src="./assets/mid-section/Rectangle 20-1.png" alt="Duas cafeteiras">
-          <h2>Acessórios</h2>
-          <p>Todo o que a gente precisa para preparar um café saboroso em casa</p>
+          <div class="acessorios-texto">
+            <h2>Acessórios</h2>
+            <p>Todo o que a gente precisa para preparar um café saboroso em casa</p>
+          </div>
+          
         </div>
 
       </div>      
@@ -146,23 +157,31 @@
     
 
     <section class="find-store">
-      <h2>Encontre uma loja</h2>      
-      <form>
-        <label for="cidade">Escolha a cidade</label>
-        <select name="cidade"></select>        
-        <input type="search" placeholder="Digite o endereço">        
-      </form>
-      <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=11&center=-15.7975%2C-47.8919&key=AIzaSyALzwXvsSG3Mbz0mqXnR6-Ly_-8gjYR9R8"></iframe>
+      <div class="find-store-1">
+        <h2>Encontre uma loja</h2>
+      </div>      
+      <div class="find-store-2">
+        <form>          
+          <select name="cidade">
+            <option value="" disabled selected>Escolha a cidade</option>
+          </select>        
+          <input type="search" placeholder="Digite o endereço">        
+        </form>
+      </div>
+      <div class="find-store-3">
+        <iframe width="1440" height="512" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=11&center=-15.7975%2C-47.8919&key=AIzaSyALzwXvsSG3Mbz0mqXnR6-Ly_-8gjYR9R8"></iframe>
+      </div>
+      
     </section>
 
   </main>
 
   <footer>
-    <div>
-      <div>
-          <p>BlackCoffee</p>
+    <div class="containers">
+      <div class="brand">
+          <p><span class="banner-bold">Black</span><span class="banner-bold-italic">Coffee</span></p>
       </div>
-      <div>
+      <div class="container">
           <h6>INSTITUCIONAL</h6>
           <ul>
               <li><a href="">Quem somos</a></li>
@@ -172,7 +191,7 @@
           </ul>
 
       </div>
-      <div>
+      <div class="container">
           <h6>PRODUTOS</h6>
           <ul>
               <li><a href="">Café</a></li>
@@ -181,7 +200,7 @@
               <li><a href="">Ofertas</a></li>
           </ul>
       </div>
-      <div>
+      <div class="container">
           <h6>REDES SOCIAIS</h6>
           <div>
             <a href=""><img src="./assets/footer/Instagram.png" alt="logo Instagram"></a>
@@ -191,8 +210,9 @@
           </div>                
       </div>
   </div>
-  <div>
-      <p>DESIGNED BY<img src="./assets/footer/mentorama..png" alt="logo Mentorama"></p>
+  <div class="creditos">
+      <p>DESIGNED BY</p>
+      <img src="./assets/footer/mentorama..png" alt="logo Mentorama">
   </div>
   </footer>
 
